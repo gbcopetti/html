@@ -1,0 +1,185 @@
+@charset "UTF-8";
+
+
+nav {
+	justify-content: center;
+	align-items: center;
+	flex: 1 1 100%;
+	height: 100px;
+}
+
+.galinha {
+    width: 70px;
+    height: 70px;
+    transform: scaleX(-1);
+
+}
+
+
+
+nav #logo {
+    position: absolute;
+    bottom: 70;
+    width: 133px;
+	display: flex;
+    animation: ouvido1 25s infinite linear;
+	flex: 0 1 200px;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.ouvido2 {
+    position: absolute;
+    bottom: 70;
+    width: 150px;
+    right: 1700px;
+
+}
+
+.ouvido3 {
+    position: absolute;
+    bottom: 5;
+    width: 160px;
+    right: 0px;
+
+}
+
+.ouvido4 {
+    position: absolute;
+    bottom: 70;
+    width: 143px;
+    right: 850px;
+
+}
+
+
+
+
+@keyframes ouvido1 {
+    from{
+        right: -120px;
+    }
+    to {
+        right: 100%;
+    }
+}
+
+
+
+
+.nav {
+  background-color: white;
+  overflow: hidden;
+  text-align: center;
+  display: table;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 50px;
+
+}
+.nav ul {
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  background: white;
+  padding: 0;
+  width: 100%;
+  list-style-type: none;
+  margin: 0 auto;
+  display: block;
+  overflow: visible;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+}
+
+.nav li {
+  color: white;
+  text-align: center;
+  display: inline-block;
+  margin: 15px;
+}
+
+.nav li a {
+  display: inline-block;
+  color: black;
+  padding: 10px 12px;
+  text-decoration: none;
+
+}
+
+.nav li a:hover {
+  background-color: white;
+  color: black;
+  border: 3px solid #F3899D;
+  border-radius: 4px;
+  opacity: 0.9;
+}
+
+
+footer {
+    position: static;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    opacity: 0.9;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.footer {
+    margin: 0;
+    text-align: center;
+    color: black;
+    font-size: 15px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+	text-align: center;
+	display: inline-block;
+
+}
+
+.rodape {
+    width: 25px;
+    margin: 10px;
+
+}
+@media only screen and (max-width: 1300px) {
+	
+	nav {
+		
+		position: fixed;
+		width: 100vw;		
+		height: 100vh;	
+		background: rgba(193, 181, 191, 0.8);		
+		flex-direction: column;		
+		align-items: center;	
+		justify-content: center;		
+		margin: 0;
+		display: none;		
+		opacity: 0;		
+		transition: 0.3s;
+	}
+
+	nav a {
+		
+		margin: 3%;
+	}
+
+	aside {
+		height: 100px;
+	}
+}
+
+

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link href="formCSS.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+    <script src="../JavaScript/Script.js" defer></script>
+    <style>
+		body{background-image: url(../IMG/background\ galinhas.avif) ;}
+        img {opacity: 1;}
+	</style>
+	<title>Cadastro de fofoqueiro</title>
+</head>
+<body>
+    <header>
+    <nav class="nav">
+        <ul>
+            <li><img src="https://cdn-icons-png.flaticon.com/512/1254/1254858.png?w=740&t=st=1681689652~exp=1681690252~hmac=d228edef3e5bfdf3ebd60ba2f922e58be49d3f14a069daeee566ddc93f7a4f72" alt="Logo da Galinha" class="logo"> </li>
+            <li><a href="../Leandro/fofogalin.html">Home </a></li>
+            <li><a href="../Cassia/detail.html">Papo de Galinha: Mundo Humano </a></li>
+            <li><a href="../HTML/form.html">Cadastro de fofoqueiro </a></li>
+            <li><a href="#contato">Contatos</a></li>
+        </ul>
+    </nav>
+    </header>  
+    <div class="imagem-correndo">
+        <img src="../IMG/gif galinha.gif" class="gif" id="gif">
+
+    </div> 
+
+    <aside style="display: flex; align-items: center; background-color: rgb(239, 24, 44);">    
+    <a href="https://www.ifood.com.br/" target="_blank">
+        <img src="../IMG/ifood.png" alt="Ifood">
+    </a>
+    </aside>
+	
+	<main>
+      
+        <br>
+
+        <form id="cadastro-form" onsubmit="salvarDados">
+            <h1>Cadastro de fofoqueiro</h1>
+		<label for="nome">Nome:</label>
+		<input type="text" id="nome" name="nome">
+		
+		<label for="sobrenome">Sobrenome:</label>
+		<input type="text" id="sobrenome" name="sobrenome">
+		
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email">
+		
+		<label for="dataNascimento">Data de nascimento:</label>
+		<input type="date" id="dataNascimento" name="dataNascimento"><p></p>
+        <br>
+        <p class="telefone">
+        <label for="telefone-ddd">Telefone:</label>
+        <l>( </l><input type="tel" id="telefone-ddd" name="telefone-ddd" maxlength="2" size="1" required><l>)</l>
+        <input type="tel" id="telefone-numero" name="telefone-numero" maxlength="9" size="9" required><br><br>    
+        </div>
+        
+        <label for="interesses">Qual conteúdo mais te interessa?</label>
+        <div class="formInteresses">
+        <input type="checkbox" id="celebridades" name="interesses[]" value="celebridades">
+        <label for="celebridades">Celebridades</label><br>
+        <input type="checkbox" id="famosos" name="interesses[]" value="famosos">
+        <label for="famosos">Famosos</label><br>
+        <input type="checkbox" id="familiareal" name="interesses[]" value="familiareal">
+        <label for="familia real">Família real</label><br>
+        <input type="checkbox" id="bbb" name="interesses[]" value="bbb">
+        <label for="bbbs">BBB</label><br>
+        <input type="checkbox" id="esportes" name="interesses[]" value="esportes">
+        <label for="esportes">Esportes</label><br>
+        <input type="checkbox" id="moda" name="interesses[]" value="moda">
+        <label for="moda">Moda</label><br>
+        <input type="checkbox" id="politica" name="interesses[]" value="politica">
+        <label for="politica">Política</label><br>
+        <input type="checkbox" id="influencers" name="interesses[]" value="influencers">
+        <label for="politica">Influencers</label><br>
+        </div>
+
+        <br><br>
+
+        <input type="checkbox" id="termos-de-uso" name="termos-de-uso" required>
+        <label for="termos-de-uso">Concordo com os termos de uso</label><br>
+
+        <input type="checkbox" id="envio-de-emails" name="envio-de-emails">
+        <label for="envio-de-emails">Receber fofocas quentinhas no meu email</label><br>
+
+		
+        <p class="botao"><input type="submit" value="Enviar"></p>
+	</form>
+
+    </main>
+
+	
+    <aside style="display: flex; align-items: center;">
+    <a href="https://br.shein.com/" target="_blank">
+        <img src="../IMG/shein.png" alt="Shein">
+    </a>
+    
+    </aside>
+
+
+    <footer id="contato" class="footer">
+        <a href="https://www.linkedin.com/company/soulcodeacademy/" target="_blank"> 
+            <img class="rodape" src="https://cdn-icons-png.flaticon.com/512/49/49408.png?w=740&t=st=1681528312~exp=1681528912~hmac=cfc89a6c4477dfea62ed91e331290097d864149391422acdc9d18ce3afbd4db1" alt="Imagem do Ícone do LinkedIn"></a>
+        <a href="https://www.instagram.com/soulcodeacademy/?hl=es" target="_blank"><img class="rodape" src="https://cdn-icons-png.flaticon.com/512/733/733614.png?w=740&t=st=1681678135~exp=1681678735~hmac=c8feaf5b94b7a96c559f1f548e3ab00781749e324f0ca7181a68e1293b55ae91" alt="Imagem de Ícone do Instagram"></a>
+        <a href="https://soulcode.com/" target="_blank"><img class="rodape" src="https://cdn-icons-png.flaticon.com/512/30/30761.png?w=740&t=st=1681678269~exp=1681678869~hmac=7f352c54e25867db19be7ba0ac87db685f50423af236a08c634940bae78561df1" alt="Imagem de Ícone do Site"></a>
+        
+        <div class="copy">
+            <p><b>Cássia Queiroz, Gustavo Copetti, Leandro Vidal &copy; 2023.</b></p><br>
+        </div>
+    </footer>
+</body>
+
+</html>

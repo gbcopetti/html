@@ -1,0 +1,345 @@
+@charset "UTF-8";
+
+* {
+	
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	
+	display: flex;
+	flex-wrap: wrap;
+	flex: 1 1 100vw;
+	margin: 3px;
+}
+
+
+aside{
+	background-color: white;
+}
+
+
+header {
+	/* Altura do elemento. */
+	height: 100px;
+	flex: 1 1 100vw;
+}
+
+/* Mover o gif pela página AAAAAAAAA*/
+.imagem-correndo {
+    position: relative;
+    width: auto;
+    height: auto;
+}
+
+.gif {
+	width: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation-name: mover-gif;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mover-gif {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(3000px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+main {
+	/* Realizar a subtração de 100% da altura vertical menos a soma    */
+	/* da altura dos elementos ( 300px ) com as suas margens ( 30px ). */
+	height: auto;
+	flex: 20 1 500px;
+}
+
+aside {
+	
+	flex: 1 1 150px;
+}
+
+
+
+a {
+	/* Remove a decoração padrão do elemento. */
+	text-decoration: none;
+
+	/* Definir a cor da fonte para o padrão do elemento pai. */
+	color: inherit;
+}
+
+/* Altera o estilo dos elementos para serem apresentados */ 
+/* em telas menores que 717px. */
+@media only screen and (max-width: 717px) {
+
+	nav {
+		/* Torna a posição do elemento fixa. */
+		position: fixed;
+
+		/* Ocupa 100% da largura da tela de exibição. */
+		width: 100vw;
+
+		/* Ocupa 100% da altura da tela de exibição. */
+		height: 100vh;
+
+		/* Cor em RGB, mais transparência. */
+		background: rgba(255, 255, 255, 0.8);
+
+		/* Dispõe os itens em coluna. */
+		flex-direction: column;
+
+		/* Alinha os itens na horizontal. */
+		align-items: center;
+
+		/* Alinha os itens na vertical. */
+		justify-content: center;
+
+		/* Remove a margem externa de todos os lados do elemento. */
+		margin: 0;
+
+		/* Oculta o elemento. */
+		display: none;
+
+		/* Invisivel */
+		opacity: 0;
+
+		/* Velocidade de transição de um estado para outro. */
+		transition: 0.3s;
+	}
+
+	nav a {
+		/* Margem de todos os lados. */
+		margin: 3%;
+	}
+
+	aside {
+		height: 100px;
+	}
+}
+
+nav.nav li a:hover {
+  background-color: white;
+  color: black;
+  border: 3px solid #F3899D;
+  border-radius: 4px;
+  opacity: 0.9;
+}
+
+/* FORMULÁRIO */
+body {
+    background-color: #f7f7f7;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 35px;
+    margin: 30px 0 20px;
+    text-align: center;
+  }
+
+  form {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+    max-width: 600px;
+    padding: 30px;
+  }
+
+  label {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="date"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+  }
+
+  input[type="checkbox"],
+  input[type="radio"] {
+    box-sizing: border-box;
+    margin-right: 10px;
+  }
+
+  input[type="checkbox"]:last-child,
+  input[type="radio"]:last-child {
+    margin-right: 0;
+  }
+
+  /* Adicionando estilo ao botão de enviar */
+  input[type="submit"] {
+    background-color: #ff99e9;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background-color 0.2s ease-in-out;
+  }
+
+  input[type="submit"]:hover,
+  input[type="submit"]:focus {
+    background-color: #ff00c8;
+    outline: none;
+  }
+
+  /*Centralizando o botão por uma classe*/
+
+    .botao {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  /*Separando os interesses em colunas*/
+  .formInteresses{
+    column-count: 3;
+    column-gap: 20px;
+  }
+
+/*Adicionando estilo diretamente pelo ID */
+  #menu{
+	background:#ff99e999;
+  }
+
+  #telefone-ddd {
+    width: 40px;
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  #telefone-numero {
+    width: auto;
+    display: inline-block;
+  }
+
+  .header-social .nav-link {
+	font-size: 1.25rem; }
+
+.nav-link:hover,
+.nav-link:focus {
+  color: inherit;
+  opacity: 1; }
+
+.nav-item + .nav-item {
+  margin-left: 1rem; }
+
+  footer {
+    position: static;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: flex-end;
+    background-color: white;
+    opacity: 0.9;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.footer {
+    margin: 0;
+    text-align: center;
+    color: black;
+    font-size: 15px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+	text-align: center;
+	display: inline-block;
+
+}
+
+.rodape {
+    width: 25px;
+    margin: 10px;
+	margin: 0 10px;
+}
+
+.nav {
+	background-color: white;
+	overflow: hidden;
+	text-align: center;
+	display: table;
+	margin-top: 0;
+	margin-left: 0;
+	margin-right: 0;
+	padding: 50px;
+
+  
+  }
+  .nav ul {
+	color: black;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	background: white;
+	padding: 0;
+	width: 100%;
+	list-style-type: none;
+	margin: 0 auto;
+	display: block;
+	overflow: visible;
+	position: fixed;
+	top: 0;
+	left: 0;
+
+  
+  }
+  
+  .nav li {
+	color: white;
+	text-align: center;
+	display: inline-block;
+	margin: 15px;
+
+	
+  }
+  
+  .nav li a {
+	display: inline-block;
+	color: black;
+	padding: 10px 12px;
+	text-decoration: none;
+  
+  } 
+
+  .logo{
+	height: 60px;
+  }
+
+  html {
+    background-image: linear-gradient(rgba(255,255,255,.45),rgba(255,255,255,.5)), url('https://img.freepik.com/premium-vector/seamless-pattern-with-hens-chicken-with-brood-cute-lovely-family-domestic-fowl-poultry-birds-childish-flat-cartoon-vector-illustration_317038-1563.jpg?w=2000');
+    font-family: 'Lato', sans-serif;
+    color: black;
+}
